@@ -89,6 +89,9 @@ system-design-interview-guide/
 
 Quick reference while you prep: [docs/cheat-sheet.md](docs/cheat-sheet.md) maps interview signals to modules and defines the extra topics (quorum, leader election, hot keys, backpressure, circuit breakers).
 
+Visual references: [docs/diagrams.md](docs/diagrams.md) has Mermaid diagrams for load balancing, replication, consistent hashing, quorum, leader election, circuit breakers, rate limiting, and more.
+
+
 ## Contributing
 
 Issues and pull requests are welcome. Good contributions: corrections, new case studies, better diagrams, real-world failure stories. Keep entries concise, comparison-oriented and practical.
