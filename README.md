@@ -23,22 +23,25 @@ Tick these off as you go.
 
 ### Phase 1: Method
 - [ ] [00 Interview framework](docs/00-interview-framework.md)
-- [ ] [06 Estimation and performance metrics](docs/06-estimation-and-metrics.md)
 
 ### Phase 2: Building blocks
 - [ ] [01 Scaling and traffic](docs/01-scaling-and-traffic.md): scalability, load balancing, caching
 - [ ] [02 Data storage](docs/02-data-storage.md): SQL vs NoSQL, indexing, replication, sharding, partitioning, consistent hashing
+- [ ] [03 Consistency and distributed data](docs/03-consistency-and-distributed-data.md): CAP, consistency models, replication lag and failover, distributed transactions
 - [ ] [04 Communication](docs/04-communication.md): queues, pub/sub, API design, API gateway, microservices vs monolith
 
-### Phase 3: Hard problems
-- [ ] [03 Consistency and distributed data](docs/03-consistency-and-distributed-data.md): CAP, consistency models, replication lag and failover, distributed transactions
+### Phase 3: Hard problems and applied skills
 - [ ] [05 Reliability and protection](docs/05-reliability-and-protection.md): rate limiting, idempotency, availability, failure handling
+- [ ] [06 Estimation and performance metrics](docs/06-estimation-and-metrics.md)
 - [ ] [07 Observability and security](docs/07-observability-and-security.md)
 
 ### Phase 4: Practice
 - [ ] [Case study: URL shortener](case-studies/url-shortener.md)
 - [ ] [Case study: Rate limiter](case-studies/rate-limiter.md)
+- [ ] [Case study: Key-value store](case-studies/key-value-store.md)
 - [ ] More problems listed in [case-studies/README.md](case-studies/README.md)
+
+Module numbers flow 00 → 07 across the phases. The order is intentional: method first, then the building blocks, then the harder operational topics, and finally hands-on practice.
 
 ## The 25 concepts and where they live
 
