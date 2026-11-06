@@ -1,0 +1,33 @@
+name: Real-world failure story
+description: Share a real outage or incident and the system-design lesson
+title: "[Failure story] "
+labels: ["failure-story"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Incident or system name
+      description: "e.g. AWS S3 us-east-1 outage 2017, a caching stampede at a ride-hailing company"
+      placeholder: Incident name
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: "Briefly describe the failure: what broke, the impact, and the root cause."
+    validations:
+      required: true
+  - type: textarea
+    id: lesson
+    attributes:
+      label: System-design lesson
+      description: "What should engineers designing similar systems take away from this? (e.g. always have circuit breakers, shard hot keys, fail open vs closed)"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source or reference
+      description: "Post-mortem link, blog post, or public write-up (optional)"
+      placeholder: https://example.com/postmortem

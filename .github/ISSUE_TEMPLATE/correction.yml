@@ -1,0 +1,30 @@
+name: Correction
+description: Report a typo, stale number, broken link, or factual error in the guide
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for catching this! Please point to the exact file and line if you can."
+  - type: input
+    id: location
+    attributes:
+      label: File and location
+      description: "e.g. docs/02-data-storage.md line 42, or case-studies/url-shortener.md"
+      placeholder: docs/02-data-storage.md
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What currently says
+      description: "Paste the existing text, or describe the error."
+    validations:
+      required: true
+  - type: textarea
+    id: suggested
+    attributes:
+      label: Suggested fix
+      description: "What should it say instead, and why?"
+    validations:
+      required: true

@@ -1,0 +1,27 @@
+name: New case study
+description: Propose a new solved case study for the practice list
+title: "[Case study] "
+labels: ["case-study"]
+body:
+  - type: input
+    id: problem
+    attributes:
+      label: Problem name
+      description: "e.g. Notification system, News feed, Distributed cache"
+      placeholder: Notification system
+    validations:
+      required: true
+  - type: textarea
+    id: concepts
+    attributes:
+      label: Main concepts it exercises
+      description: "Which modules and concepts does this case study cover? (e.g. queues, pub/sub, retries, idempotency)"
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: Plan
+      description: "Are you planning to write it yourself, or requesting someone else to? Any relevant links or notes?"
+    validations:
+      required: true
