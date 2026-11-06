@@ -59,3 +59,5 @@ Concepts: back-of-envelope estimation (21), latency vs throughput (22).
 1. Estimate storage and QPS for a photo sharing app with 50 million DAU.
 2. Why is p99 more useful than the average?
 3. Your throughput is fine but users complain about slowness. What do you check?
+
+Worked answers to all three: [estimation-examples.md](estimation-examples.md).
