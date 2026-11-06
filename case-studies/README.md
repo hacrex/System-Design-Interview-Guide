@@ -28,3 +28,7 @@ Work through these with the [blank template](../templates/design-template.md). S
 3. Include numbers in the estimation, one deep dive with options compared, and a list of tradeoffs.
 4. Add follow-up questions at the end.
 5. Link it from this table and from the main README.
+
+## Practice tip
+
+Score yourself before you compare with the solved examples: see [docs/grading-rubric.md](../docs/grading-rubric.md). It maps to the same seven framework steps in the template, so you can spot your 0s and 1s and drill them before moving on.
