@@ -77,7 +77,20 @@ Storage choice: **Redis with geospatial indexing (GEOADD/GEORADIUS)** for live d
 
 ## 5. High-level design
 
+```mermaid
+flowchart TD
+    Rider([Rider App]) --> GW[API Gateway]
+    GW --> Ride[Ride Service]
+    Ride --> Match[Matching Service]
+    Match --> RideDB[(Ride DB)]
+    Ride --> Geo[Geo Index / Redis]
+    Geo --> Match
+    Driver([Driver App]) --> Loc[Location Updates]
+    Loc --> DriverSvc[Driver Service]
+    DriverSvc --> Geo
 ```
+
+```text
 Rider App -> API Gateway -> Ride Service -> Matching Service -> Ride DB (shard by ride_id)
                                                       ^
                                               Geo Index (Redis: driver locations)

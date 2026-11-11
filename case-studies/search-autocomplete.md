@@ -57,7 +57,18 @@ Storage choice: **in-memory trie / prefix tree** per region for ultra-low latenc
 
 ## 5. High-level design
 
+```mermaid
+flowchart TD
+    User([User types]) --> Client[Client]
+    Client --> GW[API Gateway]
+    GW --> Suggest[Suggest Service]
+    Suggest --> Trie[In-memory Trie / Prefix Index]
+    Suggest --> Log[Search Log Pipeline / Kafka]
+    Log --> Agg[Popularity Aggregator]
+    Agg --> Index[Index Update]
 ```
+
+```text
 User types keystroke -> Client -> API Gateway -> Suggest Service
                                                     |
                                             In-memory Trie / Prefix Index

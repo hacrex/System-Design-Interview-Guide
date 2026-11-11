@@ -62,7 +62,22 @@ Storage choice: in-memory hash map per node plus LRU eviction list. No relationa
 
 ## 5. High-level design
 
+```mermaid
+flowchart TD
+    Client([Client]) --> LB[Load Balancer]
+    LB --> Ring[Consistent Hashing Ring]
+    Ring --> N1[Cache Node 1]
+    Ring --> N2[Cache Node 2]
+    Ring --> N3[Cache Node 3]
+    N1 --> R1[(LRU + replica)]
+    N2 --> R2[(LRU + replica)]
+    N3 --> R3[(LRU + replica)]
+    N1 -.->|replication / gossip| N2
+    N2 -.->|replication / gossip| N3
+    N3 -.->|replication / gossip| N1
 ```
+
+```text
 Client -> Load Balancer -> Consistent Hashing Ring -> Cache Node 1 (LRU + replica)
                                                    -> Cache Node 2 (LRU + replica)
                                                    -> Cache Node 3 (LRU + replica)

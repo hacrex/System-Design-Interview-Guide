@@ -74,7 +74,18 @@ Storage choice: **distributed key-value store / wide-column store** for the URL 
 
 ## 5. High-level design
 
+```mermaid
+flowchart TD
+    Seed[Seed URLs] --> Frontier[URL Frontier]
+    Frontier --> Scheduler[Scheduler]
+    Scheduler --> Fetcher[Fetcher Pool]
+    Fetcher --> Parser[Parser / Link Extractor]
+    Parser --> Dedup[Dedup / Seen Set]
+    Dedup --> Frontier
+    Fetcher --> Storage[Content Storage]
 ```
+
+```text
 Seed URLs -> URL Frontier (distributed queue, partitioned by host)
                                 |
                         Scheduler (politeness per host)

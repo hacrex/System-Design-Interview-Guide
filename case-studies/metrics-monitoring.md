@@ -72,7 +72,20 @@ Storage choice: **time-series database (Prometheus-like, LSM-tree based)** for m
 
 ## 5. High-level design
 
+```mermaid
+flowchart TD
+    Agent[Agent / Service] --> Ingest[Ingest API]
+    Ingest --> WAL[Write-Ahead Log]
+    WAL --> TSDB[(TSDB / LSM tree)]
+    TSDB --> Query[Query Engine]
+    TSDB --> Alert[Alerting Engine]
+    Alert --> Notify[Notification]
+    TSDB --> Down[Downsampler]
+    Down --> Rollups[(Rollups)]
+    Rollups --> Cold[(Cold Storage)]
 ```
+
+```text
 Agent / Service -> Ingest API (batch) -> Write-Ahead Log -> TSDB (LSM tree, sharded by metric)
                                                                 |
                                                         Query Engine

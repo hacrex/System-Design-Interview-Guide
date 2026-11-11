@@ -75,7 +75,26 @@ Storage choice: relational database sharded by `conversation_id` (one conversati
 
 ## 5. High-level design
 
+```mermaid
+flowchart TD
+    ClientA([Client A]):::client --> LB[Load Balancer]
+    ClientB([Client B]):::client --> LB
+    LB --> CM[Connection Manager]
+    CM --> MS[Message Service]
+    MS --> CDB[(Conversation DB)]
+    MS --> MQ[(Message Queue)]
+    CDB --> CM
+    MS --> PRE[(Presence / Redis)]
+    MQ --> ODW[Offline Delivery Workers]
+    ODW --> Push[Push / Email]
+    subgraph Online["Online users"]
+        ClientA
+        ClientB
+    end
+    classDef client fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
 ```
+
+```text
 Client (websocket) -> Load Balancer -> Connection Manager (websocket nodes)
                                                       |
                                               Message Service (stateless)

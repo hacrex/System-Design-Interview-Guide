@@ -83,7 +83,19 @@ Storage choice: **object storage (S3-like)** for file blobs — durable, cheap, 
 
 ## 5. High-level design
 
+```mermaid
+flowchart TD
+    Client([Client]) --> Upload[Upload Service]
+    Upload --> Obj[(Object Storage / chunks)]
+    Upload --> Meta[Metadata Service]
+    Meta --> DB[(PostgreSQL)]
+    Meta --> Sync[Sync Service]
+    Sync --> Dev[Device Registry]
+    Sync --> Download[Download Service]
+    Download --> CDN[CDN / Object Storage]
 ```
+
+```text
 Client -> Upload Service -> Object Storage (chunks/blocks)
                       |
               Metadata Service (PostgreSQL, shard by user_id)
