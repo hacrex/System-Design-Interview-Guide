@@ -67,3 +67,5 @@ These come up in senior interviews. They are covered inside modules 03 and 05 bu
 - Stuck on a problem? Find the interview signal above and open the matching module.
 - Heard a term you don't recognize? Check the glossary.
 - Practicing a case study? Keep this tab open next to the [blank template](../templates/design-template.md) and the [grading rubric](grading-rubric.md).
+- Need to sketch how an algorithm actually works? See [algorithms-reference.md](algorithms-reference.md) for token bucket, consistent hashing, LRU, exponential backoff, leader election, and circuit breaker.
+- Want timed practice prompts? See [mock-interview-bank.md](mock-interview-bank.md) for 45-minute simulations tagged by module and difficulty.

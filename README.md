@@ -39,39 +39,14 @@ Tick these off as you go.
 - [ ] [Case study: URL shortener](case-studies/url-shortener.md)
 - [ ] [Case study: Rate limiter](case-studies/rate-limiter.md)
 - [ ] [Case study: Key-value store](case-studies/key-value-store.md)
+- [ ] [Case study: Notification system](case-studies/notification-system.md)
 - [ ] More problems listed in [case-studies/README.md](case-studies/README.md)
 
 Module numbers flow 00 → 07 across the phases. The order is intentional: method first, then the building blocks, then the harder operational topics, and finally hands-on practice.
 
 ## The 25 concepts and where they live
 
-| # | Concept | Module |
-|---|---------|--------|
-| 1 | Scalability (horizontal vs vertical) | 01 |
-| 2 | Load balancing | 01 |
-| 3 | Caching | 01 |
-| 4 | Sharding | 02 |
-| 5 | Replication | 02 |
-| 6 | SQL vs NoSQL | 02 |
-| 7 | CAP theorem | 03 |
-| 8 | Consistency models | 03 |
-| 9 | Indexing | 02 |
-| 10 | Message queues | 04 |
-| 11 | Pub/sub | 04 |
-| 12 | API design (REST, gRPC, GraphQL) | 04 |
-| 13 | Rate limiting | 05 |
-| 14 | Consistent hashing | 02 |
-| 15 | Microservices vs monolith | 04 |
-| 16 | API gateway | 04 |
-| 17 | Idempotency | 05 |
-| 18 | Partitioning | 02 |
-| 19 | Replication lag and failover | 03 |
-| 20 | Distributed transactions (2PC vs Saga) | 03 |
-| 21 | Back-of-envelope estimation | 06 |
-| 22 | Latency vs throughput | 06 |
-| 23 | Availability | 05 |
-| 24 | Observability | 07 |
-| 25 | Security basics | 07 |
+The full concept-to-module map lives in the [cheat sheet](docs/cheat-sheet.md#the-25-concepts-at-a-glance).
 
 Extra topics added beyond the list because senior interviews probe them: quorum and leader election, hot keys, backpressure, retries with backoff, circuit breakers. They live in modules 03 and 05.
 
@@ -95,6 +70,8 @@ Visual references: [docs/diagrams.md](docs/diagrams.md) has Mermaid diagrams for
 ## Contributing
 
 Issues and pull requests are welcome. Good contributions: corrections, new case studies, better diagrams, real-world failure stories. Keep entries concise, comparison-oriented and practical.
+
+Contributors are acknowledged in [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
 ## License
 

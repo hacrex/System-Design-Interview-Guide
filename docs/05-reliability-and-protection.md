@@ -2,6 +2,14 @@
 
 Concepts: rate limiting (13), idempotency (17), availability (23), plus failure handling.
 
+## Contents
+
+- [Availability](#availability)
+- [Rate limiting](#rate-limiting)
+- [Idempotency](#idempotency)
+- [Failure handling](#failure-handling)
+- [Interview questions](#interview-questions)
+
 ## Availability
 
 Availability is the fraction of time the system serves requests correctly.

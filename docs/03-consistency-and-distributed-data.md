@@ -2,6 +2,16 @@
 
 Concepts: CAP (7), consistency models (8), replication lag and failover (19), distributed transactions (20).
 
+## Contents
+
+- [CAP theorem](#cap-theorem)
+- [Consistency models](#consistency-models)
+- [Quorums](#quorums)
+- [Leader election and consensus](#leader-election-and-consensus)
+- [Replication lag and failover](#replication-lag-and-failover)
+- [Distributed transactions](#distributed-transactions)
+- [Interview questions](#interview-questions)
+
 ## CAP theorem
 
 When a network partition happens, a system must choose:

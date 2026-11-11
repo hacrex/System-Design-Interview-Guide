@@ -1,0 +1,28 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.tmp
+*.log
+
+# Markdown build / preview output
+_site/
+docs/_book/
+*.pdf
+
+# Temporary files
+*.bak
+*.orig
+
+# Node / tooling (if linting is added locally)
+node_modules/
+package-lock.json
