@@ -55,7 +55,16 @@ on request(client):
 
 ## 5. High-level design
 
+```mermaid
+flowchart TD
+    Client([Client]) --> LB[Load Balancer]
+    LB --> GW[API Gateway / Limiter Middleware]
+    GW --> Redis[(Redis Cluster)]
+    GW --> Rules[Rules Store]
+    GW --> Backend[Backend Services]
 ```
+
+```text
 Client -> Load balancer -> API gateway (limiter middleware)
                                  |            |
                            Redis cluster   Rules store

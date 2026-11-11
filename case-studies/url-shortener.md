@@ -54,13 +54,21 @@ Access pattern is a key lookup by code, so a key-value store fits well.
 
 ## 5. High-level design
 
+```mermaid
+flowchart TD
+    Client([Client]) --> CDN[CDN]
+    CDN --> LB[Load Balancer]
+    LB --> App[App Servers]
+    App --> Cache[(Cache / Redis)]
+    App --> DB[(Database)]
+    App --> IDGen[ID Generator]
+    App --> AQ[Analytics Queue]
+    AQ --> Consumers[Consumers]
+    Consumers --> AS[(Analytics Store)]
 ```
+
+```text
 Client -> CDN -> Load balancer -> App servers -> Cache (Redis) -> Database
-                                       |
-                                  ID generator
-                                       |
-                                 Analytics queue -> Consumers -> Analytics store
-```
 
 **Read path:** check cache, on miss read the database, fill the cache, return the redirect.
 **Write path:** generate a code, store the mapping, return the short URL.

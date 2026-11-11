@@ -69,3 +69,7 @@ These come up in senior interviews. They are covered inside modules 03 and 05 bu
 - Practicing a case study? Keep this tab open next to the [blank template](../templates/design-template.md) and the [grading rubric](grading-rubric.md).
 - Need to sketch how an algorithm actually works? See [algorithms-reference.md](algorithms-reference.md) for token bucket, consistent hashing, LRU, exponential backoff, leader election, and circuit breaker.
 - Want timed practice prompts? See [mock-interview-bank.md](mock-interview-bank.md) for 45-minute simulations tagged by module and difficulty.
+- Need real-world outage examples for the reliability step? See [docs/failure-stories/README.md](failure-stories/README.md) (AWS S3 2017, Knight Capital 2012, Cloudflare 2022).
+- Want a pre-interview checklist? See [docs/common-mistakes.md](common-mistakes.md) for 15 common anti-patterns and what to do instead.
+- Interview coming up fast? See [study-plan/cram-plan.md](../study-plan/cram-plan.md) for 72h / 48h / 24h / 4h plans.
+- Preparing for the behavioral half? See [docs/behavioral-resume-prep.md](behavioral-resume-prep.md) for STAR stories and resume tips.

@@ -76,6 +76,12 @@ Quick reference while you prep: [docs/cheat-sheet.md](docs/cheat-sheet.md) maps 
 
 Visual references: [docs/diagrams.md](docs/diagrams.md) has Mermaid diagrams for load balancing, replication, consistent hashing, quorum, leader election, circuit breakers, rate limiting, and more.
 
+## More resources
+
+- [Real-world failure stories](docs/failure-stories/README.md) — AWS S3 2017, Knight Capital 2012, Cloudflare 2022, with design lessons for the reliability step
+- [Common interview mistakes](docs/common-mistakes.md) — 15 anti-patterns and what to do instead, cross-referenced to modules
+- [Behavioral & resume prep](docs/behavioral-resume-prep.md) — STAR stories, leadership signals, and resume tips for senior system design loops
+- [Short-notice cram plan](study-plan/cram-plan.md) — 72h / 48h / 24h / 4h plans when your interview is coming up fast
 
 ## Contributing
 

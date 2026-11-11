@@ -60,7 +60,20 @@ Storage choice: a distributed key-value store built on top of per-node RocksDB o
 
 ## 5. High-level design
 
+```mermaid
+flowchart TD
+    Client([Client]) --> LB[Load Balancer]
+    LB --> Coordinator[Coordinator / Proxy]
+    Coordinator --> SA[Shard A Leader]
+    Coordinator --> SB[Shard B Leader]
+    SA --> FA1[(Follower 1)]
+    SA --> FA2[(Follower 2)]
+    SB --> FB1[(Follower 1)]
+    SB --> FB2[(Follower 2)]
+    Coordinator -.->|gossip / consensus| Coordinator
 ```
+
+```text
 Client -> Load balancer -> Coordinator / proxy
                              |
                 +------------+------------+
