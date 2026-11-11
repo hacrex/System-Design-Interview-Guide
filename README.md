@@ -43,6 +43,13 @@ Tick these off as you go.
 - [ ] [Case study: News feed](case-studies/news-feed.md)
 - [ ] [Case study: Payment system](case-studies/payment-system.md)
 - [ ] [Case study: Video streaming](case-studies/video-streaming.md)
+- [ ] [Case study: Chat system](case-studies/chat-system.md)
+- [ ] [Case study: Distributed cache](case-studies/distributed-cache.md)
+- [ ] [Case study: File storage and sync](case-studies/file-storage-sync.md)
+- [ ] [Case study: Search autocomplete](case-studies/search-autocomplete.md)
+- [ ] [Case study: Web crawler](case-studies/web-crawler.md)
+- [ ] [Case study: Ride hailing](case-studies/ride-hailing.md)
+- [ ] [Case study: Metrics and monitoring system](case-studies/metrics-monitoring.md)
 - [ ] More problems listed in [case-studies/README.md](case-studies/README.md)
 
 Module numbers flow 00 → 07 across the phases. The order is intentional: method first, then the building blocks, then the harder operational topics, and finally hands-on practice.

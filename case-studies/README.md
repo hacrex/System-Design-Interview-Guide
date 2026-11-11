@@ -1,6 +1,6 @@
 # Practice Problems
 
-Work through these with the [blank template](../templates/design-template.md). Solved examples so far: [URL shortener](url-shortener.md), [rate limiter](rate-limiter.md), [key-value store](key-value-store.md), [notification system](notification-system.md), [news feed](news-feed.md), [payment system](payment-system.md), and [video streaming](video-streaming.md).
+Work through these with the [blank template](../templates/design-template.md). Solved examples so far: [URL shortener](url-shortener.md), [rate limiter](rate-limiter.md), [key-value store](key-value-store.md), [notification system](notification-system.md), [news feed](news-feed.md), [payment system](payment-system.md), [video streaming](video-streaming.md), [chat system](chat-system.md), [distributed cache](distributed-cache.md), [file storage and sync](file-storage-sync.md), [search autocomplete](search-autocomplete.md), [web crawler](web-crawler.md), [ride hailing](ride-hailing.md), and [metrics and monitoring system](metrics-monitoring.md).
 
 ## Suggested order
 
@@ -11,15 +11,15 @@ Work through these with the [blank template](../templates/design-template.md). S
 | 3 | Key-value store | Replication, quorums, consistent hashing | Solved |
 | 4 | Notification system | Queues, pub/sub, retries, idempotency | Solved |
 | 5 | News feed | Fan-out on write vs read, caching, hot keys | Solved |
-| 6 | Chat system | Websockets, ordering, storage, presence | Practice |
-| 7 | Distributed cache | Eviction, consistent hashing, hot keys | Practice |
-| 8 | File storage and sync | Chunking, dedup, consistency, metadata | Practice |
+| 6 | Chat system | Websockets, ordering, storage, presence | Solved |
+| 7 | Distributed cache | Eviction, consistent hashing, hot keys | Solved |
+| 8 | File storage and sync | Chunking, dedup, consistency, metadata | Solved |
 | 9 | Video streaming | CDN, encoding pipeline, storage tiers | Solved |
 | 10 | Payment system | Idempotency, sagas, strong consistency, reconciliation | Solved |
-| 11 | Search autocomplete | Tries, ranking, caching, update pipeline | Practice |
-| 12 | Web crawler | Queues, politeness, dedup, partitioning | Practice |
-| 13 | Ride hailing | Geo indexing, matching, real-time updates | Practice |
-| 14 | Metrics and monitoring system | Time series storage, aggregation, alerting | Practice |
+| 11 | Search autocomplete | Tries, ranking, caching, update pipeline | Solved |
+| 12 | Web crawler | Queues, politeness, dedup, partitioning | Solved |
+| 13 | Ride hailing | Geo indexing, matching, real-time updates | Solved |
+| 14 | Metrics and monitoring system | Time series storage, aggregation, alerting | Solved |
 
 ## How to add a case study
 
