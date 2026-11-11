@@ -40,6 +40,9 @@ Tick these off as you go.
 - [ ] [Case study: Rate limiter](case-studies/rate-limiter.md)
 - [ ] [Case study: Key-value store](case-studies/key-value-store.md)
 - [ ] [Case study: Notification system](case-studies/notification-system.md)
+- [ ] [Case study: News feed](case-studies/news-feed.md)
+- [ ] [Case study: Payment system](case-studies/payment-system.md)
+- [ ] [Case study: Video streaming](case-studies/video-streaming.md)
 - [ ] More problems listed in [case-studies/README.md](case-studies/README.md)
 
 Module numbers flow 00 → 07 across the phases. The order is intentional: method first, then the building blocks, then the harder operational topics, and finally hands-on practice.
